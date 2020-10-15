@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="WpfApp1.View.TestView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.View"
+             mc:Ignorable="d" Height="476" Width="588">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="329*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="main" Background="Aqua" Margin="5,0,10,12" Grid.ColumnSpan="2">
+            <TextBlock Text="Coba text" Foreground="Black"/>
+
+            <TextBlock Text="TEST Load HTML" Margin="65,0,0,119" Grid.ColumnSpan="2"/>
+            <Expander Height="282" Width="532" Margin="0,-100.2,0,0">
+                <Expander.Header>
+                    <TextBlock Text="Buka ini di dalamnya ad HTML"/>
+                </Expander.Header>
+                <WebBrowser Margin="0,10,0,8" x:Name="htmlSample" Width="488"/>
+            </Expander>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>
